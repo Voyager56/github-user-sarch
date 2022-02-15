@@ -26,6 +26,7 @@ function App() {
         <input
           type="text"
           value={username}
+          placeholder="Enter Github Username"
           onChange={(e) => setUsername(e.target.value)}
         />
       </form>
@@ -37,7 +38,7 @@ function App() {
           <h1 className="username">{user.username}</h1>
         </a>
       ) : (
-        <p>Please enter username</p>
+        <p>Please enter valid username</p>
       )}
     </div>
   );

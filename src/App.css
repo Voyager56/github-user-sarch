@@ -53,15 +53,12 @@ input {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
   .App {
     text-align: center;
   }
   input {
     width: max-content;
-  }
-  form {
-    align-self: flex-start;
   }
   .user {
     flex-direction: column;
