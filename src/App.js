@@ -22,7 +22,6 @@ function App() {
     } else {
       setUser(null);
     }
-    console.log(user);
   }, [username]);
 
   return (

@@ -31,10 +31,4 @@ input {
   input {
     width: max-content;
   }
-  .user {
-    flex-direction: column;
-  }
-  .username {
-    font-size: 2rem;
-  }
 }
