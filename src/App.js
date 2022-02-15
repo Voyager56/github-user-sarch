@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import User from "./User.js";
 import "./App.css";
 
 const getGithubUser = async (username) => {
@@ -33,10 +34,7 @@ function App() {
       {username.length === 0 ? (
         <p>Please enter a username</p>
       ) : user ? (
-        <a className="user" target="_blank" href={user.html_link}>
-          <img className="avatar" src={user.avatar_url} alt="avatar" />
-          <h1 className="username">{user.username}</h1>
-        </a>
+        <User user={user} />
       ) : (
         <p>Please enter valid username</p>
       )}
