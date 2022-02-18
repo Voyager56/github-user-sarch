@@ -38,7 +38,11 @@ function App() {
       {username.length === 0 ? (
         <p>Please enter a username</p>
       ) : user ? (
-        user.map((user) => <User key={user.id} user={user} />)
+        <div className="user-list">
+          {user.map((user) => (
+            <User key={user.id} user={user} />
+          ))}
+        </div>
       ) : (
         <p>Please enter valid username</p>
       )}
